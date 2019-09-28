@@ -12,7 +12,7 @@ import Home from './components/Home';
 import About from './components/About';
 import UserProfile from './components/UserProfile';
 import ClassList from './components/ClassList';
-import Assignments from './components/Assignments';
+import AddAssignment from './components/Assignments';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route exact path = "/" component = {Home} />
         <Route exact path = "/about" component = {About} />
         <Route exact path = "/login" component = {Login} />
-        <Route exact path = "/assignments" component = {Assignments} />
+        <Route exact path = "/assignments" component = {AddAssignment} />
         <Route exact path = "/profile" component = {UserProfile} />
       </Switch>
 
