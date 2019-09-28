@@ -10,6 +10,9 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
 import About from './components/About';
+import UserProfile from './components/UserProfile';
+import ClassList from './components/ClassList';
+import Assignments from './components/Assignments';
 
 function App() {
   return (
@@ -17,11 +20,13 @@ function App() {
       <div className = "App">
       <NavBar/>
 
+
       <Switch>
         <Route exact path = "/" component = {Home} />
         <Route exact path = "/about" component = {About} />
         <Route exact path = "/login" component = {Login} />
         <Route exact path = "/signup" component = {Signup} />
+        <Route exact path = "/profile" component = {UserProfile} />
       </Switch>
 
 
