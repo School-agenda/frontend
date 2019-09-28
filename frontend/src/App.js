@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 //Nav bar
-import NavBar from './components/NavBar';
+import Navigation from './components/NavBar';
 
 //Components
 import Login from './components/Login';
@@ -18,14 +18,14 @@ function App() {
   return (
     <Router>
       <div className = "App">
-      <NavBar/>
+      <Navigation/>
 
 
       <Switch>
         <Route exact path = "/" component = {Home} />
         <Route exact path = "/about" component = {About} />
         <Route exact path = "/login" component = {Login} />
-        <Route exact path = "/signup" component = {Signup} />
+        <Route exact path = "/assignments" component = {Assignments} />
         <Route exact path = "/profile" component = {UserProfile} />
       </Switch>
 
