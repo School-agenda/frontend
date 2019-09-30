@@ -9,7 +9,7 @@ const Login = () => {
       }
     return(
         <div>
-        <h1>Login</h1>
+        <h1>Login with Your Google Account!</h1>
        
            
             <GoogleLogin

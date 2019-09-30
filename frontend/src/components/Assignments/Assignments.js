@@ -9,53 +9,53 @@ export default class Assignments extends React.Component {
     render() {
       return (
         <StyledForm>
-
-          <FormGroup>
-            <Label for="exampleEmail">Name of Assignment </Label>
+            <StyledBig>Add an Assignment</StyledBig>
+          <StyledGroup>
+            <StyledLabel for="exampleEmail">Name of Assignment </StyledLabel>
             <StyledInput
               type="text"
               name="email"
               id="exampleEmail"
-              placeholder="with a placeholder"
+              placeholder="Name"
             />
-          </FormGroup>
+          </StyledGroup>
 
 
-          <FormGroup>
-            <Label for="exampleNumber">How Often Would You Like To Be Reminded? </Label>
+          <StyledGroup>
+            <StyledOften for="exampleNumber">How Often Would You Like To Be Reminded? </StyledOften>
             <StyledInput
               type="number"
               name="number"
               id="exampleNumber"
-              placeholder="number placeholder"
+              placeholder="Frequency"
             />
-          </FormGroup>
+          </StyledGroup>
 
-          <FormGroup>
+          <StyledGroup>
             <Label for="exampleDate">Date of Reminder </Label>
-            <StyledInput
+            <StyledDate
               type="date"
               name="date"
               id="exampleDate"
               placeholder="date placeholder"
             />
-          </FormGroup>
-          <FormGroup>
+          </StyledGroup>
+          <StyledGroup>
             <Label for="exampleTime">Time of Reminder </Label>
-            <StyledInput
+            <StyledTime
               type="time"
               name="time"
               id="exampleTime"
               placeholder="time placeholder"
             />
-          </FormGroup>
+          </StyledGroup>
   
     
           
-          <FormGroup>
-            <Label for="exampleText">Description of Assignment (not required) </Label>
+          <StyledGroup>
+            <StyledDes for="exampleText">Description of Assignment (not required) </StyledDes>
             <StyledText type="textarea" name="text" id="exampleText"  />
-          </FormGroup>
+          </StyledGroup>
 
 
 
@@ -73,6 +73,8 @@ const StyledForm = styled(Form)`
   padding-bottom: 5%;
   padding-top: 5%;
   font-weight: bold;
+  width:70%;
+  margin-left: 15%;
 `
 
 const StyledText = styled(Input)`
@@ -80,6 +82,7 @@ const StyledText = styled(Input)`
   border-radius: 5px;
   border: 1px solid #7CF8D3;
   background-color: whitesmoke;
+
 `
 
 const StyledInput = styled(Input)`
@@ -87,4 +90,42 @@ const StyledInput = styled(Input)`
   border: 1px solid #7CF8D3;
   padding: .5%;
   background-color: whitesmoke;
+`
+
+const StyledLabel = styled(Label)`
+  margin-right: 3%;
+
+`
+
+const StyledOften = styled(Label)`
+  margin-left: -14%;
+  margin-right: 1.5%;
+`
+const StyledDate = styled(Input)`
+border-radius: 5px;
+border: 1px solid #7CF8D3;
+padding: .5%;
+background-color: whitesmoke;
+margin-left: 5.5%;
+`
+
+const StyledTime = styled(Input)`
+border-radius: 5px;
+border: 1px solid #7CF8D3;
+padding: .5%;
+background-color: whitesmoke;
+margin-left: 1.5%;
+`
+
+const StyledDes = styled(Label)`
+    margin-left: -13%;
+    margin-right: 2%;
+`
+
+const StyledGroup = styled(FormGroup)`
+  margin-bottom: 2%;
+`
+const StyledBig = styled.h1`
+  margin-top: -5%;
+  margin-bottom:3%;
 `
